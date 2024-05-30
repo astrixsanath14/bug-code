@@ -1,5 +1,5 @@
 #include<iostream>
-#inlcude<add>
+#include "add.h"
 using namespace std;
 
 void readTwoNumbers(int &a, int &b){
