@@ -6,6 +6,20 @@ void readTwoNumbers(int &a, int &b){
   cin>>a>>b;
 }
 
+int subtract(int a, int b)
+{
+  return a + b;
+}
+int divide(int a, int b)
+{
+  return a / b;
+}
+
+int multiply(int a, int b)
+{
+  return a * b;
+}
+
 int main(){
   while(true){
     cout<<"1. Add two numbers"<<"\n";
@@ -25,6 +39,18 @@ int main(){
         readTwoNumbers(a, b);
         result = add(a, b);
       break;
+      case 2:
+        readTwoNumbers(a, b);
+        result = subtract(a, b);
+        break;
+      case 3:
+        readTwoNumbers(a, b);
+        result = divide(a, b);
+        break;
+      case 4:
+        readTwoNumbers(a, b);
+        result = multiply(a, b);
+        break;
       case 5:
       default:
       return 0;
